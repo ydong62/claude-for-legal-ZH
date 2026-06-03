@@ -198,12 +198,13 @@ Rules for every skill, command, and agent in this plugin:
 
 ## 知识库检索路由
 
-本插件优先使用本地法律知识库进行检索。当需要知识库数据支撑时：
+涉及法律知识库检索时，遵循 `references/knowledge-base-crossref.md` 四步协议：
+1. 路由规则加载——读取知识库路由配置获取效力分级和检索策略
+2. 概念体系检索——优先检索知识库概念文章（Wiki/Concepts 层）
+3. 原始数据源检索——按优先源 → 扩展源顺序检索原始数据
+4. 外部补充——知识库不足时补充 yuan dian MCP 或联网搜索
 
-1. 读取知识库路由配置：`/Users/CS/Documents/知识库/.claude/rules/knowledge-routing.md`
-2. 按路由表的优先源 → 警示源 → 一般源顺序执行检索
-3. 知识库不足时再补充 yuan dian MCP 或联网搜索
-4. 引用知识库内容时标注 `[本地知识库]` 标签
+引用知识库内容时标注 `[本地知识库]` 标签。
 
 ---
 

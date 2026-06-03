@@ -314,7 +314,7 @@ Rules for every skill, command, and agent in this plugin:
 
 ### 知识库检索路由
 
-在非知识库工作区遇到法律问题时，读取 `/Users/CS/Documents/知识库/.claude/rules/knowledge-routing.md` 获取路由配置，按效力分级执行检索。
+涉及法律知识库检索时，遵循 `references/knowledge-base-crossref.md` 四步协议：路由规则加载 → 概念体系检索 → 原始数据源检索（优先源→扩展源）→ 外部补充。
 
 ---
 
