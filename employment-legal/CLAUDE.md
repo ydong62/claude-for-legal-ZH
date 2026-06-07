@@ -198,13 +198,7 @@ Rules for every skill, command, and agent in this plugin:
 
 ## 知识库检索路由
 
-涉及法律知识库检索时，遵循 `references/knowledge-base-crossref.md` 四步协议：
-1. 路由规则加载——读取知识库路由配置获取效力分级和检索策略
-2. 概念体系检索——优先检索知识库概念文章（Wiki/Concepts 层）
-3. 原始数据源检索——按优先源 → 扩展源顺序检索原始数据
-4. 外部补充——知识库不足时补充 yuan dian MCP 或联网搜索
-
-引用知识库内容时标注 `[本地知识库]` 标签。
+知识库检索路由统一遵循 `company-profile.md`「本地知识库」段的约定（变量 `[KB_ROOT]`、路由算法、未配置时的降级行为均在该段定义）。该约定为全插件单一来源，本处不重复。
 
 ---
 
